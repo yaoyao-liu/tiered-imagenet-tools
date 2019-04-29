@@ -1,6 +1,7 @@
 <p align="center">
     <img src="https://raw.githubusercontent.com/y2l/tiered-imagenet-tools/master/docs/tiered-imagenet.png" />
 </p>
+
 # Tools for *tiered*ImageNet Dataset
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/y2l/tiered-imagenet-tools/blob/master/LICENSE)
