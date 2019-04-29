@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/y2l/tiered-imagenet-tools/master/tiered-imagenet.png" />
+    <img src="https://raw.githubusercontent.com/y2l/tiered-imagenet-tools/master/tiered-imagenet.png" width="300"/>
 </p>
 
 # Tools for *tiered*ImageNet Dataset
