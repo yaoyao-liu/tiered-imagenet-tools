@@ -40,7 +40,7 @@ Then clone the repo:
 git clone https://github.com:y2l/tiered-imagenet-tools.git
 cd tiered-imagenet-tools
 ```
-To generate tiered-ImageNet dataset from tar file:
+To generate *tiered*ImageNet dataset from tar file:
 ```bash
 python tiered_imagenet_generator.py --tar_dir [your_path_of_the_ILSVRC2012_img_train.tar]
 ```
@@ -75,7 +75,7 @@ for idx in range(total_train_step):
 ```
 
 ### Acknowledgement
-This repo use the source code from the following repos:
+This repo uses the source code from the following repos:
 
 [Model-Agnostic Meta-Learning](https://github.com/cbfinn/maml)
 
