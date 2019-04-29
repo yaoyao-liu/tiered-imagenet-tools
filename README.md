@@ -75,6 +75,9 @@ for idx in range(total_train_step):
 ```
 
 ### Acknowledgement
-[MAML](https://github.com/cbfinn/maml)
+This repo use the source code from the following repos:
+
+[Model-Agnostic Meta-Learning](https://github.com/cbfinn/maml)
 
 [Optimization as a Model for Few-Shot Learning](https://github.com/gitabcworld/FewShotLearning)
+
