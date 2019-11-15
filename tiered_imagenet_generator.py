@@ -79,8 +79,6 @@ class tieredImageNetGenerator(object):
             this_class_target_dir = target_dir + '/' + keys + '/'
             if not os.path.exists(this_class_target_dir):
                 os.mkdir(this_class_target_dir)  
-            # Waiting for pull request.
-            # image_path = glob(os.path.join(img_dir, split, keys, '*')
             image_path = glob(os.path.join(img_dir, keys, '*'))
             for j in trange(len(image_path)):
                 path = image_path[j]
