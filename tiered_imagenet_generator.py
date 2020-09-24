@@ -31,11 +31,18 @@ class tieredImageNetGenerator(object):
     def __init__(self, input_args):
         self.input_args = input_args
         if self.input_args.tar_dir is not None:
-            print('Untarring ILSVRC2012 package')
-            self.imagenet_dir = './imagenet'
+            self.imagenet_dir = os.path.splitext(self.input_args.tar_dir)[0]
             if not os.path.exists(self.imagenet_dir):
                 os.mkdir(self.imagenet_dir)
+            print('Untarring ILSVRC2012 package into ' + self.imagenet_dir)
             os.system('tar xvf ' + str(self.input_args.tar_dir) + ' -C ' + self.imagenet_dir)
+            for sub_tar_name in tqdm(os.listdir(self.imagenet_dir)):
+                sub_tar_path = os.path.join(self.imagenet_dir, sub_tar_name)
+                sub_tar_dir_path = os.path.splitext(sub_tar_path)[0]
+                if not os.path.exists(sub_tar_dir_path):
+                    os.mkdir(sub_tar_dir_path)
+                os.system('tar xf ' + str(sub_tar_path) + ' -C ' + sub_tar_dir_path)
+                os.remove(sub_tar_path)
         elif self.input_args.imagenet_dir is not None:
             self.imagenet_dir = self.input_args.imagenet_dir
         else:
