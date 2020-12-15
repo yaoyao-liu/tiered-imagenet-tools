@@ -144,7 +144,7 @@ class TieredImageNetDataLoader(object):
         new_path_list = []
         new_label_list = []
         for k in range(batch_sample_num):
-            class_idxs = range(0, self.way_num)
+            class_idxs = list(range(0, self.way_num))
             random.shuffle(class_idxs)
             for class_idx in class_idxs:
                 true_idx = class_idx*batch_sample_num + k
